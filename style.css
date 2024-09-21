@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    /* background-image: url("https://watermark.lovepik.com/photo/40178/6852.jpg_wh1200.jpg"); */
+    background-image: url(bg/bg012.jpeg);
+    /*background-size: auto;*/
+    background-size: cover;  /*Ajusta a imagem ao tamanho da tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da viewport */
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    /* max-width: 300px; */
+    width: 50%;
+    align-items: center;
+    /* margin: 0 auto; */
+    margin: 40px auto;
+    background-color: #f0f0f0; /* Cor de fundo mais clara */
+    opacity: 0.9;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+    text-transform: uppercase;
+}
+
+.pesquisa {
+    /* display: flex;
+    justify-content: center;
+    margin-top: 20px; */
+    display: flex;
+    flex-direction: column; /* Se quiser o botão abaixo do input */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pesquisa input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    /* max-width: 300px; */
+    width: 30%;
+}
+
+.pesquisa button {
+    padding: 10px 20px;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pesquisa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pesquisa input {
+        width: 80%;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 12px;
+      }
+}
+
+#mensagens {
+    margin-top: 10px;
+    color: red;
+}
+
+#formularioCadastro {
+    margin-top: 20px;
+}
+
+.item-resultado {
+    background-color: #f5f5f5; /* Cor de fundo branco claro */
+    border: 1px solid #ffffff; /* Borda branca de 1 pixel */
+    padding: 10px 20px; /* Espaçamento interno para o texto */
+    border-radius: 5px; /* Arredondamento das bordas */
+    /* max-width: 400px; */
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0.8; /* Um valor entre 0 e 1, onde 0 é totalmente transparente e 1 é totalmente opaco */
+}
+
+.campo-pesquisa {
+    background-color: #f5f5f5; /* Cor de fundo branco claro */
+    border: 1px solid #ffffff; /* Borda branca de 1 pixel */
+    padding: 10px 20px; /* Espaçamento interno para o texto */
+    border-radius: 5px; /* Arredondamento das bordas */
+    /* max-width: 400px; */
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0.8; /* Um valor entre 0 e 1, onde 0 é totalmente transparente e 1 é totalmente opaco */
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+main {
+    flex: 1; /* Ocupa todo o espaço disponível antes do footer */
+}
+
+
